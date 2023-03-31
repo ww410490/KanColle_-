@@ -32,3 +32,4 @@ C:\Users\VT8A\Desktop\Jimmy\專案\ex9_KanColle_AutoExpedition\KanColle_AutoExpe
 C:\Users\VT8A\Desktop\Jimmy\專案\ex9_KanColle_AutoExpedition\KanColle_AutoExpedition\obj\Debug\net6.0-windows\ex9_控制滑鼠移動點擊(自動遠征).pdb
 C:\Users\VT8A\Desktop\Jimmy\專案\ex9_KanColle_AutoExpedition\KanColle_AutoExpedition\obj\Debug\net6.0-windows\ex9_控制滑鼠移動點擊(自動遠征).genruntimeconfig.cache
 C:\Users\VT8A\Desktop\Jimmy\專案\ex9_KanColle_AutoExpedition\KanColle_AutoExpedition\obj\Debug\net6.0-windows\ref\ex9_控制滑鼠移動點擊(自動遠征).dll
+C:\Users\VT8A\Desktop\Jimmy\專案\ex9_KanColle_AutoExpedition\KanColle_AutoExpedition\bin\Debug\net6.0-windows\ex9_控制滑鼠移動點擊(自動遠征).dll.config

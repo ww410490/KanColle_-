@@ -78,7 +78,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 95);
             this.button1.TabIndex = 4;
-            this.button1.Text = "儲存滑鼠座標(&S)";
+            this.button1.Text = "儲存滑鼠座標(&G)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -88,7 +88,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(206, 120);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Start";
+            this.button2.Text = "Start(&S)";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -6,6 +6,7 @@ namespace ex9_控制滑鼠移動點擊_自動遠征_
     using System.Windows.Forms;
     using System.Runtime.InteropServices;
     using static Mouse;
+    using System.Configuration;
 
     public partial class Form1 : Form
     {
@@ -39,23 +40,57 @@ namespace ex9_控制滑鼠移動點擊_自動遠征_
             textBox2.Text += "X:" + mousePos.X + " Y:" + mousePos.Y + Environment.NewLine;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
             // 移动鼠标到指定位置
-            Random random = new Random();
+            //x：矩形左上角的 x 坐标；y：矩形左上角的 y 坐标；width：矩形的宽度；height：矩形的高度。
+            //先在首頁收遠征
+            //string rectangle1Value = ConfigurationManager.AppSettings["Rectangle1"]; // 设置矩形区域  
+            //MoveTo(rectangle1Value);
+            //LeftClick();
 
-            Rectangle rect = new Rectangle(100, 100, 500, 500); // 设置矩形区域
+            foreach (string key in ConfigurationManager.AppSettings.AllKeys)
+            {
+                string value = ConfigurationManager.AppSettings[key];
+                textBox2.Text += value + Environment.NewLine;
+                MoveToAsync(value);
+
+                Random random = new Random();
+                int sec1 = random.Next(1000, 3000);
+                await Task.Delay(sec1);
+
+                LeftClick();
+            }
+
+        }
+
+        static public async Task MoveToAsync(string rectangle1Value)
+        {
+            //string rectangle1Value = ConfigurationManager.AppSettings["Rectangle1"];
+            string[] rectangle1Values = rectangle1Value.Split(',');
+            int rectx = int.Parse(rectangle1Values[0]);
+            int recty = int.Parse(rectangle1Values[1]);
+            int width = int.Parse(rectangle1Values[2]);
+            int height = int.Parse(rectangle1Values[3]);
+            Rectangle rect = new Rectangle(rectx, recty, width, height);
+
+            Random random = new Random();
             int x = random.Next(rect.Left, rect.Right);
             int y = random.Next(rect.Top, rect.Bottom);
             Cursor.Position = new Point(x, y);
 
-            LeftClick();
+            int sec1 = random.Next(1000, 2000);
+            await Task.Delay(sec1);
         }
 
-        static public void LeftClick()
+        static public async void LeftClick()
         {
+            Random random = new Random();
+            int sec1 = random.Next(500, 1000);
+            int sec2 = random.Next(10, 20);
+            await Task.Delay(sec1);
             LeftDown();
-            Task.Delay(20);
+            await Task.Delay(sec2);
             LeftUp();
         }
 
