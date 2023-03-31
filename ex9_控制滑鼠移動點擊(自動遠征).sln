@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex9_控制滑鼠移動點擊(自動遠征)", "ex9_控制滑鼠移動點擊(自動遠征).csproj", "{593E5509-7910-4428-9852-6AD463FF597A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{593E5509-7910-4428-9852-6AD463FF597A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593E5509-7910-4428-9852-6AD463FF597A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593E5509-7910-4428-9852-6AD463FF597A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593E5509-7910-4428-9852-6AD463FF597A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22F5ECBA-96B3-4894-A0CA-03AF42751A4F}
+	EndGlobalSection
+EndGlobal
